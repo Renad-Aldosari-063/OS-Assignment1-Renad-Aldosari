@@ -132,16 +132,21 @@ Document your development process as you work on the assignment. Add entries sho
 
 ---
 
-### Entry 6 - [Optional - Date and Time]
-**What I did**: 
+### Entry 6 - [March 28, 2026, 6:00 PM]
+**What I did**: Reviewed and tested the program to ensure all features are working correctly.
 
-**Details**: 
+**Details**:
+- Ran the program and checked the output
+- Verified that priority, context switches, and waiting time are displayed correctly
+- Reviewed the code and output for any issues
+- Ensured that all features work together properly
+**Challenges**: I wanted to make sure that all features were working correctly together.
+ 
 
-**Challenges**: 
+**Solution**: I carefully checked the program output and verified each feature step by step.
+ 
 
-**Solution**: 
-
-**Time spent**: 
+**Time spent**: 30 minutes
 
 ---
 
