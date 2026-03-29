@@ -32,16 +32,25 @@ Document your development process as you work on the assignment. Add entries sho
 
 ## Your Development Log:
 
-### Entry 1 - [Date and Time]
-**What I did**: 
+### Entry 1 - [March 26, 2026, 1:00 AM]
+**What I did**: Created my GitHub account, forked the starter repository, and updated my student ID in the code.
 
-**Details**: 
 
-**Challenges**: 
+**Details**: - Created a GitHub account using my university email
+- Verified my email address before continuing
+- Forked the starter repository from the instructor's GitHub page
+- Changed the student ID on line 150 to my actual ID (445052063)
+- Added a commit with the required message for the student ID change
+- Ran the program to make sure the project still worked correctly
 
-**Solution**: 
 
-**Time spent**: 
+**Challenges**: I was confused about how the forked repository is linked to my GitHub account and how my changes are saved. 
+
+**Solution**: I explored GitHub and followed the instructions to understand how my fork works, then made a commit to ensure my changes were saved properly.
+ 
+
+**Time spent**: 45 minutes 
+
 
 ---
 
