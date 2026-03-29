@@ -77,16 +77,22 @@ Document your development process as you work on the assignment. Add entries sho
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**: 
+### Entry 3 - [March 27, 2026, 10:30 AM]
+**What I did**: Continued working on Feature 1 by applying and testing the priority behavior in the scheduling process. 
 
-**Details**: 
+**Details**:
+- Ran the program after adding the priority field
+- Observed how processes behave with different priority values
+- Checked if higher priority processes are handled first
+- Verified that the output reflects the correct priority behavior
+- Made small adjustments to improve the results 
 
-**Challenges**: 
+**Challenges**: I was not sure if the priority was correctly affecting the scheduling order during execution. 
 
-**Solution**: 
+**Solution**: I tested the program multiple times with different scenarios and carefully observed the output to confirm that the priority was working as expected.
 
-**Time spent**: 
+**Time spent**: 35 minutes
+
 
 ---
 
