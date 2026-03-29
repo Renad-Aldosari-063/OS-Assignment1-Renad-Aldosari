@@ -98,10 +98,10 @@ Round-Robin is useful here because it allows each thread to run for a short time
 ## Summary
 
 **Key concepts I understood through these questions:**
-1. 
-2. 
-3. 
+1. How Round-Robin scheduling works using time quantum and context switching.
+2. The importance of fairness and responsiveness when multiple threads share the CPU.
+3. How different processes move between states like ready and running during execution.
 
 **Concepts I need to study more:**
-1. 
-2. 
+1.  How to choose the best time quantum value and its effect on performance.
+2.  More detailed understanding of context switching overhead and how it affects system efficiency.
