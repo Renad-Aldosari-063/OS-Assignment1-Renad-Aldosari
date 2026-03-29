@@ -9,7 +9,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Write your answer here. Discuss specific concepts like thread creation, thread states, how threads execute concurrently, what surprised you, etc.]
+[From this assignment, I learned that multithreading allows multiple tasks to make progress within the same program. I understood that each thread has its own execution path, but threads can still be coordinated to achieve a specific scheduling behavior. While working on the code, I saw how threads are created and started to simulate process execution. I also learned that thread control methods such as start() and join() are important for managing execution order. Additionally, I became aware of different thread states such as running and waiting, especially when using join(). One thing that surprised me is that multithreading is not only about running things at the same time, but also about controlling how and when each thread executes. This assignment helped me connect the theoretical concepts from class with actual code behavior..]
 
 ---
 
