@@ -77,21 +77,21 @@ At this point, the process finishes execution and exits the lifecycle.
 
 **Your Answer:**
 
-### Example 1: [Name of application/scenario]
+### Example 1: Web Server
 
 **Description**: 
-[Describe the real-world scenario or application]
+A web server can use multiple threads to handle requests from different users at the same time. Each request can be treated like a separate task that needs CPU time to process data and send a response. If many requests arrive together, the server needs a fair way to share CPU time between them.
 
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
+ Round-Robin scheduling works well in this case because it gives each thread a time quantum and prevents one request from using the CPU for too long. This improves fairness and keeps the system responsive when many users are active. It is similar to this assignment, where each process gets a turn, and if it does not finish, it goes back to the ready queue for another round.
 
-### Example 2: [Name of application/scenario]
+### Example 2: Game Engine
 
 **Description**: 
-[Describe the real-world scenario or application]
+ A game engine can use multiple threads for tasks such as input handling, physics updates, sound, and background loading. These tasks need to run repeatedly and share CPU time so that the game continues to respond smoothly. If one task takes too much time, it can affect the player’s experience.
 
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
+Round-Robin is useful here because it allows each thread to run for a short time before switching to another one. This supports responsiveness and predictability, which are important in interactive applications like games. The same concept appears in this assignment, where context switches and time quantum help multiple processes make progress without one process blocking the others.
 
 ---
 
