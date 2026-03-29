@@ -41,18 +41,18 @@ Answer the following questions about your learning experience. Each answer shoul
 
 ### What would you like to learn more about?
 
-[Any topics related to threading, concurrency, or operating systems that you're curious about?]
+[I would like to learn more about advanced ways of managing threads, especially in more complex scenarios than this assignment.]
 
 ---
 
 ### How confident do you feel about multithreading concepts now?
 
-[Rate yourself and explain: Beginner / Intermediate / Confident]
+[Intermediate]
 
-[Explain your rating - what do you understand well? What needs more practice?]
+[I understand the basic concepts and implementation, but I still need more practice with complex scenarios.]
 
 ---
 
 ### Feedback on the assignment
 
-[Any comments about the assignment? Was it helpful? Too easy/hard? Suggestions for improvement?]
+[The assignment was helpful in understanding how multithreading works in practice. It was a bit challenging, but it improved my problem-solving skills.]
