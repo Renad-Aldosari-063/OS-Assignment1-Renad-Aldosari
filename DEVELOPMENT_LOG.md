@@ -114,16 +114,21 @@ Document your development process as you work on the assignment. Add entries sho
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**: 
+### Entry 5 - [March 28, 2026, 11:21 AM]
+**What I did**: Implemented Feature 3 by tracking and displaying the waiting time for each process. 
 
 **Details**: 
+- Added functionality to calculate the waiting time for each process
+- Updated the process logic to track waiting duration during execution
+- Created a summary output showing process name, burst time, and waiting time
+- Ran the program to verify the accuracy of the calculated values
+- Reviewed the final output to ensure everything is displayed correctly
 
-**Challenges**: 
+**Challenges**:  I found it challenging to correctly calculate the waiting time for each process during execution.
 
-**Solution**: 
+**Solution**:  I carefully followed the execution flow and updated the waiting time step by step, then tested the results to ensure accuracy.
 
-**Time spent**: 
+**Time spent**: 1 hour
 
 ---
 
