@@ -152,10 +152,12 @@ Document your development process as you work on the assignment. Add entries sho
 
 ## Summary
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [Approximately 3.5 hours]
 
-**Most challenging part**: 
+**Most challenging part**: Implementing the waiting time calculation and ensuring it updates correctly during execution.
 
-**Most interesting learning**: 
 
-**What I would do differently next time**: 
+**Most interesting learning**: Understanding how process scheduling works and how different features like priority and context switching affect execution.
+ 
+
+**What I would do differently next time**: I would plan the implementation steps more clearly from the beginning and organize my work more effectively.
