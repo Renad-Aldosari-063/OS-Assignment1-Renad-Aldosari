@@ -21,15 +21,19 @@ Answer all 4 questions with detailed explanations. Each answer should be **3-5 s
 
 **Your Answer:**
 
-[Write your answer here. Describe the specific behavior - where does the process go? When does it run again? Give an example from your actual program output showing a process that was re-queued.]
+[In Round-Robin scheduling, if a process does not finish within its time quantum, it is paused and moved back to the ready queue to wait for another turn. This ensures that all processes get a fair chance to execute without one process using the CPU for too long.]
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+P1 executing quantum [4000ms]
+P1 completed quantum 4000ms → Overall progress: 63%
+Remaining time: 2259ms
+P1 yields CPU for context switch
+P1 (Priority: 5) added to ready queue
 ```
 
 **Explanation of example:**
-[Explain what's happening in the output snippet you pasted]
+[In this example, process P1 runs for one time quantum but does not finish because it still has remaining time. As a result, it yields the CPU and is placed back into the ready queue. Later, it will be scheduled again after other processes get their turn. This behavior is important for fairness because it prevents one process from dominating the CPU and allows all processes to make progress step by step.]
 
 ---
 
