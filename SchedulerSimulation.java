@@ -164,9 +164,11 @@ class Process implements Runnable {
 
 public class SchedulerSimulation {
     
+    // Feature 2: Counter to track the number of context switches
+    // This value increases whenever a new process begins execution
+    private static int contextSwitchCount = 0;
     
     
-   
     
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
@@ -248,12 +250,13 @@ public class SchedulerSimulation {
             // Get the next thread from the queue (FIFO)
             Thread currentThread = processQueue.poll(); // Dequeues the next thread
             
-           
+            // Feature 2: Increase the context switch counter when a process starts execution
+            contextSwitchCount++;
             
             // Retrieve the process associated with the thread from the map
             Process process = processMap.get(currentThread);
             
-            
+           
             
             // Print the current process queue (list of process IDs in the queue)
             System.out.println(Colors.BOLD + Colors.MAGENTA + "┌─ Ready Queue " + "─".repeat(65) + Colors.RESET);
@@ -301,7 +304,7 @@ public class SchedulerSimulation {
               
                 }
             }
-            
+           
         }
         
         // End of the scheduler simulation
@@ -316,7 +319,24 @@ public class SchedulerSimulation {
                           "╚════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
         
-        
+        // FEATURE 2: Track and display total context switches during the simulation
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
+                          "╔════════════════════════════════════════════════════════════════════════════════╗" + 
+                          Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET + 
+                          Colors.BG_BLUE + Colors.BRIGHT_WHITE + Colors.BOLD + 
+                          "                        SCHEDULER STATISTICS                                     " + 
+                          Colors.RESET + Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
+                          "╠════════════════════════════════════════════════════════════════════════════════╣" + 
+                          Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET + 
+                          Colors.CYAN + "  🔄 Total Context Switches: " + Colors.RESET + 
+                          Colors.BRIGHT_CYAN + String.format("%-52s", contextSwitchCount) + 
+                          Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET);
+        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
+                          "╚════════════════════════════════════════════════════════════════════════════════╝" + 
+                          Colors.RESET + "\n");
         
          
     }
@@ -343,6 +363,5 @@ public class SchedulerSimulation {
                           " │ Burst time: " + Colors.YELLOW + process.getBurstTime() + "ms" + 
                           Colors.RESET);
     }
-    
-    }
-
+  
+}
