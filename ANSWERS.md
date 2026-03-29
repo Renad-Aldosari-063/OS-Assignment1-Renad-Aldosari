@@ -43,17 +43,31 @@ P1 (Priority: 5) added to ready queue
 
 **Your Answer:**
 
-[Write your answer here. For each state, explain when P1 enters that state during the simulation. Use your understanding of the code to trace through the lifecycle.]
+[A thread goes through several states during its lifecycle. In this simulation, we can trace the lifecycle of process P1 using the code in SchedulerSimulation.java.]
 
-1. **New**: [When is P1 in New state?]
+1. **New**: P1 is in the New state when the Process object is created using the constructor:
+Process process = new Process("P1", burstTime, timeQuantum, priority);
+At this point, the thread has not started yet.
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: P1 becomes Runnable after it is wrapped inside a Thread object and added to the ready queue using:
+Thread thread = new Thread(process);
+and then:
+processQueue.add(thread);
+Here, the thread is ready to run but waiting for CPU scheduling.
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: P1 enters the Running state when the scheduler selects it and calls:
+currentThread.start();
+This triggers the run() method where the process executes its time quantum.
 
-4. **Waiting**: [When/why would P1 be Waiting?]
+4. **Waiting**: P1 goes into a Waiting (or blocked) state during execution when:
+Thread.sleep(stepTime);
+is called inside the run() method to simulate execution delay. Also, the main thread waits using:
+currentThread.join();
+until the current process finishes its time slice.
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: P1 reaches the Terminated state when its remainingTime becomes zero:
+if (remainingTime <= 0)
+At this point, the process finishes execution and exits the lifecycle.
 
 ---
 
