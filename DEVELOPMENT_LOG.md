@@ -96,16 +96,21 @@ Document your development process as you work on the assignment. Add entries sho
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**: 
+### Entry 4 - [March 27, 2026, 2:30 PM]
+**What I did**: Started implementing Feature 2 by adding a counter to track context switches.
+
 
 **Details**: 
+- Added a variable to count the number of context switches
+- Incremented the counter whenever a new process starts execution
+- Integrated the counter into the scheduling flow
+- Ran the program to ensure the counter updates correctly during execution
 
-**Challenges**: 
+**Challenges**: I was not sure where exactly to increment the counter to correctly reflect context switches. 
 
-**Solution**: 
+**Solution**: I analyzed when a process starts execution and placed the counter increment at that point, then tested the program to confirm correct behavior.
 
-**Time spent**: 
+**Time spent**: 43 minutes
 
 ---
 
