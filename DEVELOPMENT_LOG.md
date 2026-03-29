@@ -54,16 +54,26 @@ Document your development process as you work on the assignment. Add entries sho
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**: 
+### Entry 2 - [March 26, 2026, 2:00 AM]
+**What I did**: Started implementing Feature 1 by adding a priority attribute to the Process class.
+ 
 
-**Details**: 
+**Details**:
+- Reviewed the existing Process class structure
+- Added a new priority field to represent process importance
+- Updated the constructor to initialize the priority value
+- Modified relevant parts of the code to handle the new attribute
+- Tested the program to ensure it still runs correctly after the changes
 
-**Challenges**: 
 
-**Solution**: 
+**Challenges**: I was unsure where exactly to integrate the priority attribute within the existing Process class without affecting the current functionality.
 
-**Time spent**: 
+ 
+**Solution**: I carefully analyzed the class structure, added the priority field step by step, and tested the program after each change to ensure everything worked correctly.
+ 
+
+
+**Time spent**: 40 minutes
 
 ---
 
