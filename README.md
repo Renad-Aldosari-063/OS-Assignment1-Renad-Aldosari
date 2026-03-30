@@ -553,3 +553,6 @@ Your work will be evaluated based on the following criteria:
 **Late Policy:** -2 marks per day late
 
 Good luck! Start early, commit regularly, and demonstrate your understanding of Java threading through this assignment.
+
+## Video Demo
+Video Link: https://drive.google.com/file/d/1AsHUA0RUIbTYu3oZCCnJOIdiTvkQ1vIG/view?usp=sharing
